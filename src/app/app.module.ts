@@ -3,21 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { InputComponent } from './components/input/input.component';
 import { ItemComponent } from './components/item/item.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    InputComponent,
-    ItemComponent
-  ],
-  imports: [
-    BrowserModule,
-    FontAwesomeModule
-  ],
+  declarations: [AppComponent, InputComponent, ItemComponent],
+  imports: [BrowserModule, FontAwesomeModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
